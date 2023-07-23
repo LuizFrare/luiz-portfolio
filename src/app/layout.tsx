@@ -1,3 +1,4 @@
+"use client";
 import StyledComponentsRegistry from "@/lib/registry";
 import "./globals.css";
 import type { Metadata } from "next";
@@ -5,6 +6,13 @@ import { Inter } from "next/font/google";
 import Header from "./Components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const headerLinks = [
+  { href: "/", children: "Home" },
+  { href: "/about", children: "Projetos" },
+  { href: "/about", children: "Sobre" },
+  { href: "/contact", children: "Contato" },
+];
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,8 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR">
-      <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
-    </html>
+    <StyledComponentsRegistry>
+      <html lang="pt-BR">
+        <Header links={headerLinks} />
+        {children}
+      </html>
+    </StyledComponentsRegistry>
   );
 }

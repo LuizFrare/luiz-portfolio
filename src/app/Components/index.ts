@@ -1,2 +1,2 @@
 import Header from "./Header";
-import MenuButton from "./HamburguerIcon";
+import HamburguerIcon from "./HamburguerIcon";
