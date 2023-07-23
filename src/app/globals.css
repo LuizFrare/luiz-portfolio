@@ -9,6 +9,10 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
+  --dark-gray: #30464E;
+  --hamilton-blue: #5f767f;
+  --white: #ffffff; 
+
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,
@@ -83,10 +87,11 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: var(--dark-gray);
   background: linear-gradient(
       to bottom,
       transparent,
