@@ -9,7 +9,7 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
-  --dark-gray: #30464e;
+  --dark-hamilton-blue: #30464e;
   --hamilton-blue: #5f767f;
   --gray-light: #c6dfe9;
   --gray-mid: #4c626b;
@@ -95,12 +95,7 @@ body {
 
 body {
   color: var(--dark-gray);
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--white);
 }
 
 a {

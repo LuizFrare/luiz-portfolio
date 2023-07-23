@@ -23,6 +23,7 @@ export const HeaderWrapper = styled.header`
 
   @media (max-width: 768px) {
     padding: 1rem 1.5rem;
+    position: relative;
   }
 `;
 
@@ -37,15 +38,19 @@ export const MenuList = styled.ul`
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 4rem;
-    right: 2rem;
+    top: 4.9375rem;
     background-color: var(--gray-dark);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 1rem;
+    padding: 2rem 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s linear;
   }
 
   &.open {
     display: flex;
+    right: 0rem;
   }
 `;
 
