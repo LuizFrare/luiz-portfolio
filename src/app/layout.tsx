@@ -1,3 +1,4 @@
+"use client";
 import StyledComponentsRegistry from "@/lib/registry";
 import "./globals.css";
 import type { Metadata } from "next";
