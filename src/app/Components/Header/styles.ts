@@ -26,8 +26,6 @@ export const HeaderWrapper = styled.header`
   }
 `;
 
-
-
 export const MenuList = styled.ul`
   display: flex;
   gap: 2rem;
