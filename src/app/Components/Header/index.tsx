@@ -11,7 +11,7 @@ export default function Header(props: HeaderProps) {
   return (
     <HeaderWrapper>
       <div className="header-content">
-        <span>Luiz Frare</span>
+        <span>&lt;Luiz Frare/&gt;</span>
         <MenuButton />
         <MenuList className={menuClosed ? "" : "open"}>
           {props.links.map((linkProps) => (

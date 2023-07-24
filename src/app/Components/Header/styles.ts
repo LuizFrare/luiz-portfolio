@@ -35,33 +35,62 @@ export const MenuList = styled.ul`
   padding: 0;
 
   @media (max-width: 768px) {
-    display: none;
     flex-direction: column;
     position: absolute;
     top: 4.9375rem;
     background-color: var(--gray-dark);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 2rem 1rem;
     width: 100%;
     justify-content: center;
     align-items: center;
-    transition: all 1s linear;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    right: 0rem;
   }
 
   &.open {
     display: flex;
-    right: 0rem;
+    visibility: visible;
+    opacity: 1;
   }
 `;
 
 export const MenuItem = styled.li`
   color: white;
   text-decoration: none;
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+
   &:first-child {
     color: var(--gray-light);
   }
+
   &:hover {
     opacity: 0.7;
     transition: all 0.4s ease-in-out;
+    background-position: 0;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+
+  &:before {
+    content: "";
+    background: var(--gray-light);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
   }
 `;
