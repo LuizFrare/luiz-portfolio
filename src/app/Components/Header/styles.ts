@@ -5,7 +5,7 @@ export const HeaderWrapper = styled.header`
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  background-color: var(--gray-dark);
+  background-color: var(--black);
   width: 100%;
   color: var(--white);
   padding: 1rem 2rem;
@@ -38,7 +38,7 @@ export const MenuList = styled.ul`
     flex-direction: column;
     position: absolute;
     top: 4.9375rem;
-    background-color: var(--gray-dark);
+    background-color: var(--black);
     padding: 2rem 1rem;
     width: 100%;
     justify-content: center;
