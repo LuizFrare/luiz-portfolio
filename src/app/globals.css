@@ -95,8 +95,8 @@ body {
 }
 
 body {
-  color: var(--dark-gray);
-  background: var(--white);
+  color: var(--white);
+  background: #1B1B1B;
 }
 
 a {
