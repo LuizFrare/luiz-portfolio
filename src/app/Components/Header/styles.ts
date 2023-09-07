@@ -21,7 +21,7 @@ export const HeaderWrapper = styled.header`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     padding: 1rem 1.5rem;
     position: relative;
   }
@@ -34,7 +34,7 @@ export const MenuList = styled.ul`
   margin: 0;
   padding: 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
     position: absolute;
     top: 4.9375rem;
@@ -55,6 +55,7 @@ export const MenuList = styled.ul`
     display: flex;
     visibility: visible;
     opacity: 1;
+    z-index: 9;
   }
 `;
 
