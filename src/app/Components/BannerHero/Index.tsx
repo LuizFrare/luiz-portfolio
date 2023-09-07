@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Text, Wrapper } from './styles';
+import { ImageWrapper, Text, Wrapper } from './styles';
 
 export default function BannerHero() {
   return (
@@ -13,13 +13,36 @@ export default function BannerHero() {
           voluptatum.
         </p>
       </Text>
-      <Image
-        layout='responsive'
-        width={400}
-        height={400}
-        src='/memoji.png'
-        alt='teste'
-      />
+      <ImageWrapper>
+        <Image
+          layout='responsive'
+          width={400}
+          height={400}
+          src='/IconBanner.png'
+          alt='teste'
+        />
+        <Image
+          src='/Icons/cssIcon.svg'
+          className='svgIcon css'
+          width={40}
+          height={40}
+          alt='teste'
+        />
+        <Image
+          src='/Icons/jsIcon.svg'
+          className='svgIcon js'
+          width={40}
+          height={40}
+          alt='teste'
+        />
+        <Image
+          src='/Icons/reactIcon.svg'
+          className='svgIcon react'
+          width={40}
+          height={40}
+          alt='teste'
+        />
+      </ImageWrapper>
     </Wrapper>
   );
 }
