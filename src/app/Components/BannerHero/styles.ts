@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
 
   @media (max-width: 1024px) {
     flex-direction: column;
-    padding: 2rem 4rem;
+    padding: 2rem;
 
     .Memoji {
       width: 20rem !important;
